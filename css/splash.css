@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--dark-color);
+}
+.splash-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: var(--font);
+    color: var(--font-white);
+    padding-top: 25vh;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -60vh;
+    animation: LogoSplash 500ms forwards ease-in-out;
+}
+@keyframes LogoSplash {
+    0%{
+        top:-60vh;
+    }
+    100%{
+        top:0vh;
+    }
+}
+.logo-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 60vh;
+    animation: textSplash 500ms forwards ease-in-out;
+    letter-spacing: 1px;
+}
+@keyframes textSplash {
+    0%{
+        top:60vh;
+    }
+    100%{
+        top:0vh;
+    }
+}
+.logo-desc p{
+    display: none;
+}
